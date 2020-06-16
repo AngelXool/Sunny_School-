@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hlIl+qtPMoemrzuXPUcUxRLLzz1xXzcKG/r18lB1AYi4Pja12EhN0phqh17nwNXdWfnVtWYBQS3kGifBwuNRAA==",
+  "dgSpecHash": "AahTq/oA5cjeuixSs+CFz7dDmS27F0/KC6CtvnJhr+8iVvuHvKs43Gz7zOX/0HYM9vFv6GwoRkv82REYDD1iEw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School\\Sunny_School.csproj",
+  "projectFilePath": "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School-\\Sunny_School\\Sunny_School.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\arxy2\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\arxy2\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

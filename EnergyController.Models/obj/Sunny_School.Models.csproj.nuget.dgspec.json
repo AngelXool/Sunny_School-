@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arxy2\\Documents\\Repositorio\\EnergyController.Models\\EnergyController.Models.csproj": {}
+    "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School-\\EnergyController.Models\\Sunny_School.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arxy2\\Documents\\Repositorio\\EnergyController.Models\\EnergyController.Models.csproj": {
+    "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School-\\EnergyController.Models\\Sunny_School.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arxy2\\Documents\\Repositorio\\EnergyController.Models\\EnergyController.Models.csproj",
-        "projectName": "EnergyController.Models",
-        "projectPath": "C:\\Users\\arxy2\\Documents\\Repositorio\\EnergyController.Models\\EnergyController.Models.csproj",
+        "projectUniqueName": "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School-\\EnergyController.Models\\Sunny_School.Models.csproj",
+        "projectName": "Sunny_School.Models",
+        "projectPath": "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School-\\EnergyController.Models\\Sunny_School.Models.csproj",
         "packagesPath": "C:\\Users\\arxy2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arxy2\\Documents\\Repositorio\\EnergyController.Models\\obj\\",
+        "outputPath": "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School-\\EnergyController.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

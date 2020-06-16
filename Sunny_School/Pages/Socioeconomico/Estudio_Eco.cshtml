@@ -1,0 +1,101 @@
+﻿@page
+@model Sunny_School.Pages.Socioeconomico.Estudio_EcoModel
+@{
+    ViewData["Title"] = "Estudio_Eco";
+}
+
+<h2 class="text-info">Agregar Nuevo Alumno</h2>
+<br />
+<body>
+
+    <div class="container" style="background-color:aqua">
+        <div style="border:1px solid palevioletred; margin:7px">
+            <div style="background-color:palevioletred; height:40px">
+                <div class="text-center">
+
+                    <div class="form-group">
+                        <div style="color: black">
+                            <h3 class="text-center">Datos Economicos del Alumno</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <form method="post">
+            <label asp-for="Enlace.Ingre_mensu"></label>
+            <input asp-for="Enlace.Ingre_mensu" class="form-control" />
+        </form>
+
+
+        <br />
+        <div class="container-fluid" id="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label asp-for="Enlace.Alimentacion"></label>
+                            <input asp-for="Enlace.Alimentacion" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <form class="form-group">
+                            <label asp-for="Enlace.Diario"></label>
+                            <input asp-for="Enlace.Diario" class="form-control" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="container-fluid" id="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label asp-for="Enlace.Vivienda"></label>
+                            <input asp-for="Enlace.Vivienda" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <form class="form-group">
+                            <label asp-for="Enlace.Servicios"></label>
+                            <input asp-for="Enlace.Servicios" class="form-control" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <div class="container-fluid" id="main-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label asp-for="Enlace.Trasporte"></label>
+                            <input asp-for="Enlace.Trasporte" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <form class="form-group">
+                            <label asp-for="Enlace.Otros"></label>
+                            <input asp-for="Enlace.Otros" class="form-control" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+        <form method="post">
+            <label asp-for="Enlace.Total"></label>
+            <input asp-for="Enlace.Total" class="form-control" />
+        </form>
+        <br />
+        <a class="nav-link text-black-50" asp-area="" asp-page="/Info_Alumno/Index">Salir</a>
+        <div class="col-6 text-xl-right">
+            <a asp-page="/Socioeconomico/Estudio_Eco_2" class="btn btn-primary">Siguente</a>
+        </div>
+    </div>
+</body>
+

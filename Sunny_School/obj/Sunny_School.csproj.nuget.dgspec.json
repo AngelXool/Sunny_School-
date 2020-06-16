@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School\\Sunny_School.csproj": {}
+    "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School-\\Sunny_School\\Sunny_School.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School\\Sunny_School.csproj": {
+    "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School-\\Sunny_School\\Sunny_School.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School\\Sunny_School.csproj",
+        "projectUniqueName": "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School-\\Sunny_School\\Sunny_School.csproj",
         "projectName": "Sunny_School",
-        "projectPath": "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School\\Sunny_School.csproj",
+        "projectPath": "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School-\\Sunny_School\\Sunny_School.csproj",
         "packagesPath": "C:\\Users\\arxy2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School\\obj\\",
+        "outputPath": "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School-\\Sunny_School\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

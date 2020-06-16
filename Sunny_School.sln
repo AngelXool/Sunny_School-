@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sunny_School", "Sunny_School\Sunny_School.csproj", "{E0B367DE-8900-4BC9-BFAE-07E49E2C6B77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyController.Models", "EnergyController.Models\EnergyController.Models.csproj", "{CFABF6AF-810D-4130-92B9-3329C9D18B5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sunny_School.Models", "EnergyController.Models\Sunny_School.Models.csproj", "{CFABF6AF-810D-4130-92B9-3329C9D18B5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnergyController.Services", "EnergyController.Services\EnergyController.Services.csproj", "{ADB7EF1F-CB15-4037-AD58-C7F4890C88A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sunny_School.Services", "EnergyController.Services\Sunny_School.Services.csproj", "{ADB7EF1F-CB15-4037-AD58-C7F4890C88A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

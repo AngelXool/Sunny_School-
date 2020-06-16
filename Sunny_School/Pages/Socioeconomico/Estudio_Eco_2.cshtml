@@ -1,0 +1,61 @@
+﻿@page
+@model Sunny_School.Pages.Socioeconomico.Estudio_Eco_2Model
+@{
+    ViewData["Title"] = "Estudio_Eco_2";
+}
+
+<h2 class="text-info">Agregar Nuevo Alumno</h2>
+<br />
+<body>
+
+    <div class="container" style="background-color:aqua">
+        <div style="border:1px solid palevioletred; margin:7px">
+            <div style="background-color:palevioletred; height:40px">
+                <div class="text-center">
+
+                    <div class="form-group">
+                        <div style="color: black">
+                            <h3 class="text-center">Datos de la Vivienda</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <form method="post">
+            <label asp-for="Enlace.Piezas_casa"></label>
+            <input asp-for="Enlace.Piezas_casa" class="form-control" />
+        </form>
+        <br />
+        <div class="text-center">
+            <div class="form-group">
+                <label asp-for="Enlace.Area"></label>
+                <input asp-for="Enlace.Area" type="checkbox" value="si" />Urbana <input asp-for="Enlace.Area" type="checkbox" value="si" />Comunidad indigena
+                <input asp-for="Enlace.Area" type="checkbox" value="si" />Rural <input asp-for="Enlace.Area" type="checkbox" value="si" />Marginacion
+            </div>
+            <div class="form-group">
+                <label asp-for="Enlace.Servicios"></label>
+                <input asp-for="Enlace.Servicios" type="checkbox" value="si" />Recoleccion de basura  <input asp-for="Enlace.Servicios" type="checkbox" value="si" />Luz  <input asp-for="Enlace.Servicios" type="checkbox" value="si" />Agua
+                <input asp-for="Enlace.Servicios" type="checkbox" value="si" />Tranporte  <input asp-for="Enlace.Servicios" type="checkbox" value="si" />Alumbrado  <input asp-for="Enlace.Servicios" type="checkbox" value="si" />Drenaje
+            </div>
+            <div class="form-group">
+                <label asp-for="Enlace.Construccion"></label>
+                <input asp-for="Enlace.Construccion" type="checkbox" value="si" />Block <input asp-for="Enlace.Construccion" type="checkbox" value="si" />Cemento <input asp-for="Enlace.Construccion" type="checkbox" value="si" />Madera <input asp-for="Enlace.Construccion" type="checkbox" value="si" />Lamina
+                <input asp-for="Enlace.Construccion" type="checkbox" value="si" />Carrizo <input asp-for="Enlace.Construccion" type="checkbox" value="si" />Concreto <input asp-for="Enlace.Construccion" type="checkbox" value="si" />Tanique <input asp-for="Enlace.Construccion" type="checkbox" value="si" />Piedra
+            </div>
+            <div class="form-group">
+                <label asp-for="Enlace.Estatus"></label>
+                <input asp-for="Enlace.Estatus" type="checkbox" value="si" />Propia <input asp-for="Enlace.Estatus" type="checkbox" value="si" />Prestada <input asp-for="Enlace.Estatus" type="checkbox" value="si" />No tiene
+                <input asp-for="Enlace.Estatus" type="checkbox" value="si" />Rentada <input asp-for="Enlace.Estatus" type="checkbox" value="si" />Compartida
+            </div>
+        </div>
+        <div>
+            <a class="nav-link text-black-50" asp-area="" asp-page="/Info_Alumno/Index">Salir</a>
+            <div class="col-6 text-xl-right">
+                <a asp-page="/Info_Escolar/CreateSecond" class="btn btn-primary">Siguente</a>
+            </div>
+        </div>
+        
+    </div>
+</body>
