@@ -1,0 +1,15 @@
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.models\bin\Debug\netcoreapp3.1\SunnySchool.models.deps.json
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.models\bin\Debug\netcoreapp3.1\SunnySchool.models.dll
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.models\obj\Debug\netcoreapp3.1\SunnySchool.models.csprojAssemblyReference.cache
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.models\obj\Debug\netcoreapp3.1\SunnySchool.models.AssemblyInfoInputs.cache
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.models\obj\Debug\netcoreapp3.1\SunnySchool.models.AssemblyInfo.cs
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.models\obj\Debug\netcoreapp3.1\SunnySchool.models.csproj.CoreCompileInputs.cache
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.models\bin\Debug\netcoreapp3.1\SunnySchool.models.runtimeconfig.json
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.models\bin\Debug\netcoreapp3.1\SunnySchool.models.runtimeconfig.dev.json
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.models\obj\Debug\netcoreapp3.1\SunnySchool.models.genruntimeconfig.cache
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.models\bin\Debug\netcoreapp3.1\SunnySchool.models.pdb
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.models\obj\Debug\netcoreapp3.1\SunnySchool.models.dll
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.models\obj\Debug\netcoreapp3.1\SunnySchool.models.pdb
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.models\bin\Debug\netcoreapp3.1\SunnySchool.services.dll
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.models\bin\Debug\netcoreapp3.1\SunnySchool.services.pdb
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.models\obj\Debug\netcoreapp3.1\SunnySchool.models.csproj.CopyComplete

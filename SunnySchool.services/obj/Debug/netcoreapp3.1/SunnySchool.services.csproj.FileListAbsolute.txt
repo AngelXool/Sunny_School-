@@ -1,0 +1,9 @@
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.services\bin\Debug\netcoreapp3.1\SunnySchool.services.deps.json
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.services\bin\Debug\netcoreapp3.1\SunnySchool.services.dll
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.services\bin\Debug\netcoreapp3.1\SunnySchool.services.pdb
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.services\obj\Debug\netcoreapp3.1\SunnySchool.services.csprojAssemblyReference.cache
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.services\obj\Debug\netcoreapp3.1\SunnySchool.services.csproj.CoreCompileInputs.cache
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.services\obj\Debug\netcoreapp3.1\SunnySchool.services.AssemblyInfoInputs.cache
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.services\obj\Debug\netcoreapp3.1\SunnySchool.services.AssemblyInfo.cs
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.services\obj\Debug\netcoreapp3.1\SunnySchool.services.dll
+C:\Users\arxy2\Documents\Repositorio\Sunny_School-\SunnySchool.services\obj\Debug\netcoreapp3.1\SunnySchool.services.pdb

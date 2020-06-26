@@ -6,46 +6,34 @@ using System.Reflection.Metadata.Ecma335;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using SunnySchool.models;
 
 namespace Sunny_School.Pages.Info_Alumno
 {
     public class CreateModel : PageModel
     {
+        private readonly ApplicationDbContext _db;
+        public CreateModel(ApplicationDbContext db)
+        {
+            _db = db;
+        }
+
+        [BindProperty]
+        public Info_Alumno1 Alumno { get; set; }
         public void OnGet()
         {
 
         }
-        [BindProperty]
-        public Alumno Enlace { get; set; }
-        public class Alumno
+        
+        public async Task<IActionResult> OnPost()
         {
-
-            [Required]
-            [Display(Name = "Nombre:")]
-            public string Nombre { get; set; }
-
-            [Required]
-            [Display(Name = "C.U.R.P:")]
-            public char CURP { get; set; }
-
-            [Required]
-            [Display(Name = "Nacionalidad:")]
-            public string Nacionalidad { get; set; }
-
-            [Required]
-            [Display(Name = "Fecha de Nacimiento::")]
-            public DateTime Fecha_Nacimineto { get; set; }
-
-            [Required]
-            [Display(Name = "Genero:")]
-            public string Genero { get; set; }
-
-            [Required]
-            [Display(Name = "¿Tiene alguna discapacidad?")]
-            public string Discapacidad { get; set; }
-
-
-
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+            _db.Add(Alumno);
+            await _db.SaveChangesAsync();
+            return RedirectToPage("Index");
         }
         
 

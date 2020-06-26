@@ -24,8 +24,8 @@
         </div>
 
         <form method="post">
-            <label asp-for="Enlace.Nombre"></label>
-            <input asp-for="Enlace.Nombre" class="form-control" />
+            <label asp-for="Alumno.Nombre"></label>
+            <input asp-for="Alumno.Nombre" class="form-control" />
         </form>
 
 
@@ -35,14 +35,14 @@
                 <div class="row">
                     <div class="col">
                         <form method="post">
-                            <label asp-for="Enlace.CURP"></label>
-                            <input asp-for="Enlace.CURP" class="form-control" />
+                            <label asp-for="Alumno.CURP"></label>
+                            <input asp-for="Alumno.CURP" class="form-control" />
                         </form>
                     </div>
                     <div class="col">
                         <form method="post">
-                            <label asp-for="Enlace.Nacionalidad"></label>
-                            <input asp-for="Enlace.Nacionalidad" class="form-control" />
+                            <label asp-for="Alumno.Nacionalidad"></label>
+                            <input asp-for="Alumno.Nacionalidad" class="form-control" />
                         </form>
                     </div>
                 </div>
@@ -54,16 +54,16 @@
                 <div class="row">
                     <div class="col">
                         <form method="post">
-                            <label asp-for="Enlace.Fecha_Nacimineto"></label>
-                            <input asp-for="Enlace.Fecha_Nacimineto" class="form-control" />
+                            <label asp-for="Alumno.Fecha_Nacimineto"></label>
+                            <input asp-for="Alumno.Fecha_Nacimineto" class="form-control" />
                         </form>
                     </div>
                     <br />
                     <div class="col">
                         <form method="post">
-                            <label asp-for="Enlace.Genero"></label>
-                            <input asp-for="Enlace.Genero" type="checkbox" name="Hombre" value="H" />Hombre
-                            <input asp-for="Enlace.Genero" type="checkbox" name="Mujer" value="M" />Mujer
+                            <label asp-for="Alumno.Genero"></label>
+                            <input asp-for="Alumno.Genero" type="checkbox" name="Hombre" value="H" />Hombre
+                            <input asp-for="Alumno.Genero" type="checkbox" name="Mujer" value="M" />Mujer
                         </form>
                     </div>
                 </div>
@@ -72,14 +72,15 @@
         <br />
         <div class="text-center">
             <form method="post">
-                <label asp-for="Enlace.Discapacidad"></label>
-                <input asp-for="Enlace.Discapacidad" type="checkbox" value="si" />si
-                <input asp-for="Enlace.Discapacidad" type="checkbox" value="no" />no
+                <label asp-for="Alumno.Discapacidad"></label>
+                <input asp-for="Alumno.Discapacidad" type="checkbox" value="si" />si
+                <input asp-for="Alumno.Discapacidad" type="checkbox" value="no" />no
             </form>
         </div>
         <a class="nav-link text-black-50" asp-area="" asp-page="/Info_Alumno/Index">Salir</a>
         <div class="col-6 text-xl-right">
-            <a asp-page="/Info_Escolar/CreateSecond"  class="btn btn-primary">Siguente</a>
+            <a asp-page="/Info_Escolar/CreateSecond" class="btn btn-primary">Siguente</a>
+            <input type="submit" value="Crear" class="btn btn-primary form-control" />
         </div>
     </div>
 </body>
