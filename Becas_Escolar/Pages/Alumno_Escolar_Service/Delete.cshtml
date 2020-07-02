@@ -1,0 +1,48 @@
+﻿@page
+@model Becas_Escolar.Pages.Alumno_Escolar_Service.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Borrar Datos</h1>
+
+<h3>
+    ¿Estás seguro que quieres eliminar esto?
+</h3>
+<div>
+    <h4>Datos Escolares Del Alumno</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alumno_Escolar.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alumno_Escolar.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alumno_Escolar.Nivel_Escolar)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alumno_Escolar.Nivel_Escolar)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alumno_Escolar.Grado_Escolar)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alumno_Escolar.Grado_Escolar)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alumno_Escolar.Nombre_Tutor)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alumno_Escolar.Nombre_Tutor)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Alumno_Escolar.id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Volver Al Menu</a>
+    </form>
+</div>

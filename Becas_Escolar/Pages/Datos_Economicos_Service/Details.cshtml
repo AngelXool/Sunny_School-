@@ -1,0 +1,61 @@
+﻿@page
+@model Becas_Escolar.Pages.Datos_Economicos_Service.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Detalles</h1>
+
+<div>
+    <h4>Datos Economicos Del Alumno</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Datos_Economicos.Ingresos_Mensuales)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Datos_Economicos.Ingresos_Mensuales)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Datos_Economicos.Gasto_Alimentacion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Datos_Economicos.Gasto_Alimentacion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Datos_Economicos.Gasto_Escolar)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Datos_Economicos.Gasto_Escolar)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Datos_Economicos.Gasto_Vivienda)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Datos_Economicos.Gasto_Vivienda)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Datos_Economicos.Gasto_Servicios)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Datos_Economicos.Gasto_Servicios)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Datos_Economicos.Gasto_Transporte)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Datos_Economicos.Gasto_Transporte)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Datos_Economicos.Otros)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Datos_Economicos.Otros)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Datos_Economicos.id">Editar</a> |
+    <a asp-page="./Index">Volver Al Menu</a>
+</div>

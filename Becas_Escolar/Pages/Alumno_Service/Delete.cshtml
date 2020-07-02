@@ -1,0 +1,58 @@
+﻿@page
+@model Becas_Escolar.Pages.Models.Alumno_Service.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Borrar</h1>
+
+<h3>¿Estás seguro de que quieres eliminar esto?</h3>
+<div>
+    <h4>Datos Generales Del Alumno</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alumno.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alumno.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alumno.CURP)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alumno.CURP)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alumno.Nacionalidad)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alumno.Nacionalidad)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alumno.Fecha_nacimiento)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alumno.Fecha_nacimiento)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alumno.Genero)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alumno.Genero)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alumno.Discapacidad)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alumno.Discapacidad)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Alumno.Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-page="./Index">Volver Al Menu</a>
+    </form>
+</div>

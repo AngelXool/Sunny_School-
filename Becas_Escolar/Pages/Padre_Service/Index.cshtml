@@ -1,0 +1,66 @@
+﻿@page
+@model Becas_Escolar.Pages.Padre_Service.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Datos_Familiar_Padre[0].Nombre_Padre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Datos_Familiar_Padre[0].CURP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Datos_Familiar_Padre[0].Nacionalidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Datos_Familiar_Padre[0].Fecha_nacimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Datos_Familiar_Padre[0].Ocupacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Datos_Familiar_Padre[0].Ingresos)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Datos_Familiar_Padre) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre_Padre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CURP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nacionalidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecha_nacimiento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ocupacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ingresos)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
