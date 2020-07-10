@@ -1,0 +1,61 @@
+﻿@page
+@model Sunny.Pages.EconomicaINFO.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Mas Detalles De La Informacion</h1>
+
+<div>
+   <h3>Informacion</h3>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Info_Economica.Ingresos_Mensuales)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Info_Economica.Ingresos_Mensuales)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Info_Economica.Gasto_Alimentacion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Info_Economica.Gasto_Alimentacion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Info_Economica.Gasto_Escolar)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Info_Economica.Gasto_Escolar)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Info_Economica.Gasto_Vivienda)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Info_Economica.Gasto_Vivienda)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Info_Economica.Gasto_Servicios)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Info_Economica.Gasto_Servicios)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Info_Economica.Gasto_Transporte)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Info_Economica.Gasto_Transporte)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Info_Economica.Otros)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Info_Economica.Otros)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Info_Economica.Id">Editar Informacion</a> |
+    <a asp-page="./Index">Volver Al Menu</a>
+</div>

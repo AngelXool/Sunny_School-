@@ -1,0 +1,72 @@
+﻿@page
+@model Sunny.Pages.EconomicaINFO.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Infromacion Del Estudio Socioeconomico</h1>
+
+<p>
+    <a asp-page="Create">Agregar INformacion</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Info_Economica[0].Ingresos_Mensuales)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Info_Economica[0].Gasto_Alimentacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Info_Economica[0].Gasto_Escolar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Info_Economica[0].Gasto_Vivienda)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Info_Economica[0].Gasto_Servicios)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Info_Economica[0].Gasto_Transporte)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Info_Economica[0].Otros)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Info_Economica) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ingresos_Mensuales)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gasto_Alimentacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gasto_Escolar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gasto_Vivienda)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gasto_Servicios)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gasto_Transporte)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Otros)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Mas Detalles</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Borrar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
