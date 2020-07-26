@@ -1,0 +1,148 @@
+﻿@page
+@model Sunny.Pages.ViviendaINFO.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Info_Vivienda</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Info_Vivienda.Piezas_Casa" class="control-label"></label>
+                <input asp-for="Info_Vivienda.Piezas_Casa" class="form-control" />
+                <span asp-validation-for="Info_Vivienda.Piezas_Casa" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <div class="container">
+                    <div>
+                        <h3>Tipo De Contruccion De La Vivienda</h3>
+                    </div>
+                    <select asp-for="Info_Vivienda.Area" class="w-100" style="border:ridge">
+                        <option value="Comunidad_Indigena" class="form-control">Comunidad Indigena</option>
+                        <option value="Comunidad_Rural" class="form-control">Comunidad Rural</option>
+                        <option value="Comunidad_Urbana" class="form-control">Comunidad Urbana</option>
+                        <option value="Marginacion" class="form-control">Marginacion</option>
+                    </select>
+                    <span asp-validation-for="Info_Vivienda.Area" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            @*<div class="form-group">
+            <label asp-for="Info_Vivienda.Area" class="control-label"></label>
+            <input asp-for="Info_Vivienda.Area" class="form-control" />
+            <span asp-validation-for="Info_Vivienda.Area" class="text-danger"></span>
+        </div>*@
+
+
+            <div class="form-group">
+                <div class="container">
+                    <div>
+                        <h3>¿Cuenta con los servicios basicos (Agua, luz y Traporte)?</h3>
+                    </div>
+                    <select asp-for="Info_Vivienda.Servicios" class="w-100" style="border:ridge">
+                        <option value="SI" class="form-control">Si Cuenta Con Lo Basico</option>
+                        <option value="NO" class="form-control">NO Cuenta Con Lo Basico</option>
+                    </select>
+                    <span asp-validation-for="Info_Vivienda.Servicios" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            @*<div class="form-group">
+            <label asp-for="Info_Vivienda.Servicios" class="control-label"></label>
+            <input asp-for="Info_Vivienda.Servicios" class="form-control" />
+            <span asp-validation-for="Info_Vivienda.Servicios" class="text-danger"></span>
+        </div>*@
+
+
+            <div class="form-group">
+                <div class="container">
+                    <div>
+                        <h3>Tipo De Construccion De La Vivienda</h3>
+                    </div>
+                    <select asp-for="Info_Vivienda.Construccion" class="w-100" style="border:ridge">
+                        <option value="Block" class="form-control">Block</option>
+                        <option value="Carrizo" class="form-control">Carrizo</option>
+                        <option value="Cemento" class="form-control">Cemento</option>
+                        <option value="Concreto" class="form-control">Concreto</option>
+                        <option value="Madera" class="form-control">Madera</option>
+                        <option value="Tabique" class="form-control">Tabique</option>
+                        <option value="Lamina" class="form-control">Lamina</option>
+                        <option value="Piedra" class="form-control">Piedra</option>
+                        <option value="paja" class="form-control">paja</option>
+                        <option value="Ladrillo" class="form-control">Ladrillo</option>
+                    </select>
+                    <span asp-validation-for="Info_Vivienda.Construccion" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            @*<div class="form-group">
+            <label asp-for="Info_Vivienda.Construccion" class="control-label"></label>
+            <input asp-for="Info_Vivienda.Construccion" class="form-control" />
+            <span asp-validation-for="Info_Vivienda.Construccion" class="text-danger"></span>
+        </div>*@
+
+
+            <div class="form-group">
+                <div>
+                    <h3>Tipo De Construccion De La Vivienda</h3>
+                </div>
+                <select asp-for="Info_Vivienda.Servicios" class="w-100" style="border:ridge">
+                    <option value="Propia" class="form-control">Casa Propia</option>
+                    <option value="Rentada" class="form-control">Casa Rentada</option>
+                    <option value="Prestada" class="form-control">Casa Prestada</option>
+                    <option value="Compratida" class="form-control">Casa Compratida</option>
+                    <option value="No tiene" class="form-control">No Tiene Casa Propia</option>
+                </select>
+            </div>
+
+
+            @*<div class="form-group">
+            <label asp-for="Info_Vivienda.Estatus" class="control-label"></label>
+            <input asp-for="Info_Vivienda.Estatus" class="form-control" />
+            <span asp-validation-for="Info_Vivienda.Estatus" class="text-danger"></span>
+        </div>*@
+
+
+            <div class="form-group">
+                <div class="container">
+                    <div>
+                        <h3>¿Cuenta Con Muebles Para La Casa?</h3>
+                    </div>
+                </div>
+                <select asp-for="Info_Vivienda.Mobiliario" class="w-100" style="border:ridge">
+                    <option value="SI" class="form-control">Si Cuenta Con Muebles</option>
+                    <option value="NO" class="form-control">NO Cuenta Con Muebles</option>
+                </select>
+            </div>
+
+
+            @*<div class="form-group">
+            <label asp-for="Info_Vivienda.Mobiliario" class="control-label"></label>
+            <input asp-for="Info_Vivienda.Mobiliario" class="form-control" />
+            <span asp-validation-for="Info_Vivienda.Mobiliario" class="text-danger"></span>
+        </div>*@
+            <div class="form-group">
+                <input type="submit" value="AGREGAR" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Volver a la lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

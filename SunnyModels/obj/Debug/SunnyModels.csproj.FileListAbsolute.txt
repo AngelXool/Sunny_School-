@@ -1,0 +1,6 @@
+C:\Users\arxy2\Desktop\Prueba\Sunny\SunnyModels\bin\Debug\SunnyModels.dll
+C:\Users\arxy2\Desktop\Prueba\Sunny\SunnyModels\bin\Debug\SunnyModels.pdb
+C:\Users\arxy2\Desktop\Prueba\Sunny\SunnyModels\obj\Debug\SunnyModels.csprojAssemblyReference.cache
+C:\Users\arxy2\Desktop\Prueba\Sunny\SunnyModels\obj\Debug\SunnyModels.csproj.CoreCompileInputs.cache
+C:\Users\arxy2\Desktop\Prueba\Sunny\SunnyModels\obj\Debug\SunnyModels.dll
+C:\Users\arxy2\Desktop\Prueba\Sunny\SunnyModels\obj\Debug\SunnyModels.pdb

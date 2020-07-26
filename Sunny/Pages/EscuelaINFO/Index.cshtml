@@ -1,0 +1,54 @@
+﻿@page
+@model Sunny.Pages.EscuelaINFO.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Menu De La Informacion De La Escuela</h1>
+
+<p>
+    <a asp-page="Create">Agregar Infromacion De La Escuela</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Info_Escolar[0].Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Info_Escolar[0].Nivel_Escolar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Info_Escolar[0].Grado_Escolar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Info_Escolar[0].Nombre_Tutor)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Info_Escolar) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nivel_Escolar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Grado_Escolar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre_Tutor)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Detaales</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Borrar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

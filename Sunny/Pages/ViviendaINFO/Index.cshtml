@@ -1,0 +1,66 @@
+﻿@page
+@model Sunny.Pages.ViviendaINFO.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Info_Vivienda[0].Piezas_Casa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Info_Vivienda[0].Area)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Info_Vivienda[0].Servicios)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Info_Vivienda[0].Construccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Info_Vivienda[0].Estatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Info_Vivienda[0].Mobiliario)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Info_Vivienda) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Piezas_Casa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Area)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Servicios)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Construccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mobiliario)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
