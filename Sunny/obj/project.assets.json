@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "CsvHelper/15.0.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/CsvHelper.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/CsvHelper.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.6": {
         "type": "package",
         "compile": {
@@ -2815,6 +2827,15 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "WebmailSMTP/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/WebmailSMTP.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebmailSMTP.dll": {}
+        }
+      },
       "SunnyModels/1.0.0": {
         "type": "project",
         "compile": {
@@ -2827,6 +2848,26 @@
     }
   },
   "libraries": {
+    "CsvHelper/15.0.5": {
+      "sha512": "HPoE5nASoFXqoXKSi5yEBam7TzDrtC8WESA4xq53JtPKV8Mm+IKRuN+FJyMoJg1Whv/NG4JiCUs9yUcaSY/ziQ==",
+      "type": "package",
+      "path": "csvhelper/15.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "csvhelper.15.0.5.nupkg.sha512",
+        "csvhelper.nuspec",
+        "lib/net45/CsvHelper.dll",
+        "lib/net45/CsvHelper.xml",
+        "lib/net47/CsvHelper.dll",
+        "lib/net47/CsvHelper.xml",
+        "lib/netstandard2.0/CsvHelper.dll",
+        "lib/netstandard2.0/CsvHelper.xml",
+        "lib/netstandard2.1/CsvHelper.dll",
+        "lib/netstandard2.1/CsvHelper.xml"
+      ]
+    },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.6": {
       "sha512": "+OyVi4mANQgFC9cIH/J+BKNFWBVgTIO16HZfBp+vtTv/FFzWCV1zhxRJ3u+ZVoEouA/LboOBbP3wg8jroKH8ug==",
       "type": "package",
@@ -8894,6 +8935,18 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "WebmailSMTP/1.0.0": {
+      "sha512": "+AGgiDc0FdhdYEFJZ4c6TQ99MVjagQ4BxIyN1hohqTpaVy+nL2OtiGGuSPwTYgawNiNTCVJhoXCNVBkE/8KcRQ==",
+      "type": "package",
+      "path": "webmailsmtp/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/WebmailSMTP.dll",
+        "webmailsmtp.1.0.0.nupkg.sha512",
+        "webmailsmtp.nuspec"
+      ]
+    },
     "SunnyModels/1.0.0": {
       "type": "project",
       "path": "../SunnyModels/SunnyModels.csproj",
@@ -8902,6 +8955,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "CsvHelper >= 15.0.5",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.1.6",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.6",
       "Microsoft.AspNetCore.Identity.UI >= 3.1.6",
@@ -8909,7 +8963,8 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.6",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.6",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.3",
-      "SunnyModels >= 1.0.0"
+      "SunnyModels >= 1.0.0",
+      "WebmailSMTP >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8958,6 +9013,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "CsvHelper": {
+            "target": "Package",
+            "version": "[15.0.5, )"
+          },
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
             "target": "Package",
             "version": "[3.1.6, )"
@@ -8987,6 +9046,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[3.1.3, )"
+          },
+          "WebmailSMTP": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [

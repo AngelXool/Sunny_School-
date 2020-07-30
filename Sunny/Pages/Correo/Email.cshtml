@@ -1,0 +1,27 @@
+﻿@page
+@model Sunny.Pages.Correo.EmailModel
+@{
+    ViewData["Title"] = "Email";
+}
+
+    <form method="post">
+        <table>
+            <tr>
+                <td>PARA:</td>
+                <td><input type="text" asp-for="mails.To" placeholder="Enter Email Id..." /></td>
+            </tr>
+            <tr>
+                <td>ASUNTO:</td>
+                <td><input type="text" asp-for="mails.Subject" placeholder="Enter Subject..." /></td>
+            </tr>
+            <tr>
+                <td>CUERPO:</td>
+                <td><textarea type="text" asp-for="mails.Body" colS="25" rows="5" placeholder="Enter Text Here..."></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit" class="btn-success" value="Send Mail..." /></td>
+                <td>@ViewData["Message"]</td>
+            </tr>
+        </table>
+    </form>
+

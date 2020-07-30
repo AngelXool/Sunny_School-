@@ -39,7 +39,7 @@ namespace Sunny.Pages.PadreINFO
             _context.Info_Padre.Add(Info_Padre);
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("./Create");
         }
     }
 }

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wOghpgK0seGW1e9ZArGrls6qNwlbyWjBK3aJG2wtb2hnZk4feoPbsvvapKuryGFX/jZITLHvljF29GV7Apr7Mg==",
+  "dgSpecHash": "iUx/BnosvigvQN/AYkTUEKHncBWb1V2Zni4HaJGwip2n8LXTYlRnEpLn9hdvrDZ9LwjPs0aKU0OwbMgnsjQNqg==",
   "success": true,
   "projectFilePath": "C:\\Users\\arxy2\\Documents\\Repositorio\\Sunny_School-\\Sunny\\Sunny.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\arxy2\\.nuget\\packages\\csvhelper\\15.0.5\\csvhelper.15.0.5.nupkg.sha512",
     "C:\\Users\\arxy2\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.6\\microsoft.aspnetcore.cryptography.internal.3.1.6.nupkg.sha512",
     "C:\\Users\\arxy2\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.6\\microsoft.aspnetcore.cryptography.keyderivation.3.1.6.nupkg.sha512",
     "C:\\Users\\arxy2\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\3.1.6\\microsoft.aspnetcore.diagnostics.entityframeworkcore.3.1.6.nupkg.sha512",
@@ -175,7 +176,8 @@
     "C:\\Users\\arxy2\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\arxy2\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\arxy2\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\arxy2\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\arxy2\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\arxy2\\.nuget\\packages\\webmailsmtp\\1.0.0\\webmailsmtp.1.0.0.nupkg.sha512"
   ],
   "logs": []
 }

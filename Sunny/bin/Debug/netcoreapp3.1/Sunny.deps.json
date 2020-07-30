@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Sunny/1.0.0": {
         "dependencies": {
+          "CsvHelper": "15.0.5",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.6",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.6",
           "Microsoft.AspNetCore.Identity.UI": "3.1.6",
@@ -32,6 +33,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "3.1.6",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.3",
           "SunnyModels": "1.0.0",
+          "WebmailSMTP": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -300,6 +302,20 @@
         },
         "compile": {
           "Sunny.dll": {}
+        }
+      },
+      "CsvHelper/15.0.5": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/CsvHelper.dll": {
+            "assemblyVersion": "15.0.0.0",
+            "fileVersion": "15.0.5.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/CsvHelper.dll": {}
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.6": {
@@ -2445,6 +2461,17 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "WebmailSMTP/1.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/WebmailSMTP.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/WebmailSMTP.dll": {}
+        }
+      },
       "SunnyModels/1.0.0": {
         "runtime": {
           "SunnyModels.dll": {}
@@ -4033,6 +4060,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "CsvHelper/15.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HPoE5nASoFXqoXKSi5yEBam7TzDrtC8WESA4xq53JtPKV8Mm+IKRuN+FJyMoJg1Whv/NG4JiCUs9yUcaSY/ziQ==",
+      "path": "csvhelper/15.0.5",
+      "hashPath": "csvhelper.15.0.5.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.6": {
       "type": "package",
       "serviceable": true,
@@ -5236,6 +5270,13 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "WebmailSMTP/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+AGgiDc0FdhdYEFJZ4c6TQ99MVjagQ4BxIyN1hohqTpaVy+nL2OtiGGuSPwTYgawNiNTCVJhoXCNVBkE/8KcRQ==",
+      "path": "webmailsmtp/1.0.0",
+      "hashPath": "webmailsmtp.1.0.0.nupkg.sha512"
     },
     "SunnyModels/1.0.0": {
       "type": "project",

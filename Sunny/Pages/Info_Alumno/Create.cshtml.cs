@@ -39,7 +39,7 @@ namespace Sunny.Pages.Info_Alumno
             _context.AlumnoPers.Add(AlumnoPers);
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("./Create");
         }
     }
 }

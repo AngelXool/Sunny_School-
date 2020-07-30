@@ -5,17 +5,15 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Menu De La Informacion Del Alumno</h1>
+<h1>Menu De La Informacion Del Los Alumnos</h1>
 
 <p>
-    <a asp-page="Create">Registrar Nuevo Alumno</a>
     <br />
-    <a asp-page="/EscuelaINFO/Index">Agregar Informacion Escolar</a>
+    <a asp-page="/EscuelaINFO/Index">Ver Informacion Escolar</a>
     <br />
-    <a asp-page="/PadreINFO/Index">Agregar Informacion De Sus Padres</a>
+    <a asp-page="/PadreINFO/Index">Ver Informacion De Sus Padres</a>
     <br />
-    <a asp-page="/ViviendaINFO/Index">Agregar Informacion Socieconomico</a>
-    <br />
+    <a asp-page="/ViviendaINFO/Index">Ver Informacion Socieconomico</a>
 </p>
 <table class="table">
     <thead>
@@ -42,32 +40,35 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.AlumnoPers) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CURP)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nacionalidad)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Fecha_nacimiento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Genero)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Discapacidad)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
-                <a asp-page="./Details" asp-route-id="@item.Id">Detalles</a> |
-                <a asp-page="./Delete" asp-route-id="@item.Id">Borrar</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.AlumnoPers)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CURP)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nacionalidad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fecha_nacimiento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Genero)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Discapacidad)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.Id">Editar</a> |
+                    <a asp-page="./Details" asp-route-id="@item.Id">Detalles</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.Id">Borrar</a> |
+                    <a asp-page="Create">Agregar</a>
+
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlumnoPers.cs" />
+    <Compile Include="Cita.cs" />
     <Compile Include="Email.cs" />
     <Compile Include="Info_Economica.cs" />
     <Compile Include="Info_Escolar.cs" />

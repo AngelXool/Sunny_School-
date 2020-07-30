@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Mail;
@@ -9,7 +9,7 @@ using SunnyModels;
 
 namespace Sunny.Pages.Correo
 {
-    public class ContactModel : PageModel
+    public class EmailModel : PageModel
     {
         public string Message { get; set; }
         [BindProperty]
@@ -17,9 +17,9 @@ namespace Sunny.Pages.Correo
 
         public void OnGet()
         {
-        }
 
-        public async Task OnePost()
+        }
+        public async Task OnPost()
         {
             string To = mails.To;
             string Subject = mails.Subject;
@@ -31,12 +31,12 @@ namespace Sunny.Pages.Correo
             mm.IsBodyHtml = false;
             mm.From = new MailAddress("noxplayer2211@gmail.com");
             SmtpClient smtp = new SmtpClient("smtp.gmail.com");
-            smtp.Port = 465;
+            smtp.Port = 587;
             smtp.UseDefaultCredentials = true;
             smtp.EnableSsl = true;
-            smtp.Credentials = new System.Net.NetworkCredential("Nox Player", "noxplayer2211@gmail.com", "Loslideres2211");
+            smtp.Credentials = new System.Net.NetworkCredential("noxplayer2211@gmail.com", "Loslideres2211");
             await smtp.SendMailAsync(mm);
-            ViewData["Message"] = "The Mail Has Been Sent To" + mails.To;
+            ViewData["Message"] = "El Correo se a enviado para... " + mails.To;
         }
     }
 }

@@ -93,7 +93,7 @@ namespace Sunny.Areas.Identity.Pages.Account
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
-                        return RedirectToPage("RegisterConfirmation", new { email = Input.Email, returnUrl = returnUrl });
+                        return RedirectToPage("/Areas/Identity/Pages/Account/Login", new { email = Input.Email, returnUrl = returnUrl });
                     }
                     else
                     {
